@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+     <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Poppins:wght@300;400;500;600&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fones de ouvido</title>
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
+
+        <ul class="navegação">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Teach Specs</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#"></a></li>         
+         </ul> <!--NAVEGAÇÃO DO SITE-->
+
+         <div class="header-icons">
+            <i class='bx bx-cart' ></i>
+            <div id="menu"> <i class="bx bx-menu"></i></div>
+         </div> <!--ICONS CARRINHO E MENU-->
+    
+        </header>
+    
+        <section class="home">
+            <div class="home-img">
+                <img src="product1.png" class="one">
+            </div> <!--HOME TAG-->
+            
+                <div class="home-text">
+
+                    <h1>Wireless <br> Headphones</h1>
+                    <h5>The smarter way to listen</h5>
+                    <h3>$199.00</h3>
+                    <a href="#" class="btn">Shop Now</a>
+
+                </div> <!--HOME-TEXT-->
+
+        </section><!--HOME-->
+
+        <div class="main">
+
+            <div class="row">
+                <li><img src="main1.png" onclick="slider('product1.png')"></li>
+            </div> <!--row-->
+
+            <div class="row2">
+                <li><img src="main2.png" onclick="slider('product2.png')"></li>
+            </div> <!--row2-->
+
+            <div class="row3">
+                <li><img src="main3.png" onclick="slider('product3.png')"></li>
+            </div> <!--row3-->
+        </div> <!--main-->
+
+        <script>
+            function slider(anything){
+                document.querySelector ('.one') .src = anything;
+            };
+            let menu = document.querySelector ('#menu-icon');
+            let navbar = document.querySelector ('.navbar');
+            
+            menu.onlick = () => {
+                menu.classList.toggle ('bx-x');
+                navbar.classList.toggle ('open');
+            }
+        
+        </script>
+</body>
+</html>
